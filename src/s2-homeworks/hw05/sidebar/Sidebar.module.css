@@ -1,9 +1,7 @@
 .sidebar {
-    visibility: hidden;
 }
 
 .sidebar.open {
-    visibility: visible;
 }
 
 .background {
