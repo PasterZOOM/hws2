@@ -9,15 +9,19 @@
 }
 
 .nav {
+    margin: 5px;
 }
 
 .nav a {
+    color: blue;
 }
 
 .nav a:hover {
+    color: green;
 }
 
 .nav a.active {
+    color: red;
 }
 .close {
 }
