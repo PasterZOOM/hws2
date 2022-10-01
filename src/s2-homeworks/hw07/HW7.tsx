@@ -11,10 +11,9 @@ import s from './HW7.module.css'
 * 4 - сделать стили в соответствии с дизайном
 * */
 
-export type OptionValueType = 'x' | 'y' | 'z'
 export type OptionsTape = {
     id: number
-    value: OptionValueType
+    value: string
 }
 const arr: OptionsTape[] = [
     {id: 1, value: 'x'},
