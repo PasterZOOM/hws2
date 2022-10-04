@@ -41,6 +41,9 @@ const HW13 = () => {
                 // дописать
                 setText(res.data.errorText)
                 setInfo(res.data.info)
+                setTimeout(() => {
+                    setDisabledButton(false)
+                }, 1000)
             })
             .catch((e) => {
                 // дописать
@@ -63,6 +66,9 @@ const HW13 = () => {
                         setImage(errorUnknown)
                     }
                 }
+                setTimeout(() => {
+                    setDisabledButton(false)
+                }, 1000)
             })
             .finally(() => {
                     setTimeout(() => {
@@ -71,6 +77,11 @@ const HW13 = () => {
                 }
             )
     }
+
+    useEffect(() => {
+        if (info === '...loading')
+            setDisabledButton(true)
+    }, [info]);
 
     return (
         <div id={'hw13'}>
